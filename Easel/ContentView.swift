@@ -8,14 +8,6 @@
 import SwiftUI
 import PencilKit
 
-/**
- Goal here is to create a drawing app from where I am now.
- First up, let's figure out the stuff on the sdie here
- Okay pencil kit seems to be the
- What is helpful is the idea of pencilKit
- I think I just need to add pencilkit
- */
-
 struct ContentView: View {
     var body: some View {
         PencilKitView()
@@ -28,6 +20,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+// PencilKit for pencil input
 struct PencilKitView: UIViewRepresentable {
     typealias UIViewType = PKCanvasView
     

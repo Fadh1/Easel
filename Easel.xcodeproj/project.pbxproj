@@ -14,6 +14,7 @@
 		2A06BB0F2961329000627D12 /* EaselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06BB0E2961329000627D12 /* EaselTests.swift */; };
 		2A06BB192961329000627D12 /* EaselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06BB182961329000627D12 /* EaselUITests.swift */; };
 		2A06BB1B2961329000627D12 /* EaselUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06BB1A2961329000627D12 /* EaselUITestsLaunchTests.swift */; };
+		2A2F1023296672FA00FC3F4E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F1022296672FA00FC3F4E /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2A06BB142961329000627D12 /* EaselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EaselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A06BB182961329000627D12 /* EaselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaselUITests.swift; sourceTree = "<group>"; };
 		2A06BB1A2961329000627D12 /* EaselUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaselUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A2F1022296672FA00FC3F4E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2A06BAFD2961328E00627D12 /* EaselApp.swift */,
 				2A06BAFF2961328E00627D12 /* ContentView.swift */,
+				2A2F1022296672FA00FC3F4E /* WelcomeView.swift */,
 				2A06BB012961328F00627D12 /* Assets.xcassets */,
 				2A06BB032961328F00627D12 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A06BB002961328E00627D12 /* ContentView.swift in Sources */,
+				2A2F1023296672FA00FC3F4E /* WelcomeView.swift in Sources */,
 				2A06BAFE2961328E00627D12 /* EaselApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
