@@ -14,7 +14,12 @@
 		2A06BB0F2961329000627D12 /* EaselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06BB0E2961329000627D12 /* EaselTests.swift */; };
 		2A06BB192961329000627D12 /* EaselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06BB182961329000627D12 /* EaselUITests.swift */; };
 		2A06BB1B2961329000627D12 /* EaselUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06BB1A2961329000627D12 /* EaselUITestsLaunchTests.swift */; };
-		2A2F1023296672FA00FC3F4E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F1022296672FA00FC3F4E /* WelcomeView.swift */; };
+		2A2F1023296672FA00FC3F4E /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F1022296672FA00FC3F4E /* MeetingView.swift */; };
+		2A2F102629667A3200FC3F4E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F102529667A3200FC3F4E /* Theme.swift */; };
+		2A2F102829667A8300FC3F4E /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F102729667A8300FC3F4E /* DailyScrum.swift */; };
+		2A2F102A29667B2A00FC3F4E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F102929667B2A00FC3F4E /* CardView.swift */; };
+		2A2F102C2966839400FC3F4E /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F102B2966839400FC3F4E /* TrailingIconLabelStyle.swift */; };
+		2A2F102E2966847200FC3F4E /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F102D2966847200FC3F4E /* ScrumsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +50,12 @@
 		2A06BB142961329000627D12 /* EaselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EaselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A06BB182961329000627D12 /* EaselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaselUITests.swift; sourceTree = "<group>"; };
 		2A06BB1A2961329000627D12 /* EaselUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaselUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2A2F1022296672FA00FC3F4E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		2A2F1022296672FA00FC3F4E /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		2A2F102529667A3200FC3F4E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		2A2F102729667A8300FC3F4E /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		2A2F102929667B2A00FC3F4E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2A2F102B2966839400FC3F4E /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		2A2F102D2966847200FC3F4E /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +106,13 @@
 		2A06BAFC2961328E00627D12 /* Easel */ = {
 			isa = PBXGroup;
 			children = (
+				2A2F102429667A1E00FC3F4E /* Models */,
 				2A06BAFD2961328E00627D12 /* EaselApp.swift */,
 				2A06BAFF2961328E00627D12 /* ContentView.swift */,
-				2A2F1022296672FA00FC3F4E /* WelcomeView.swift */,
+				2A2F102929667B2A00FC3F4E /* CardView.swift */,
+				2A2F102B2966839400FC3F4E /* TrailingIconLabelStyle.swift */,
+				2A2F1022296672FA00FC3F4E /* MeetingView.swift */,
+				2A2F102D2966847200FC3F4E /* ScrumsView.swift */,
 				2A06BB012961328F00627D12 /* Assets.xcassets */,
 				2A06BB032961328F00627D12 /* Preview Content */,
 			);
@@ -128,6 +142,15 @@
 				2A06BB1A2961329000627D12 /* EaselUITestsLaunchTests.swift */,
 			);
 			path = EaselUITests;
+			sourceTree = "<group>";
+		};
+		2A2F102429667A1E00FC3F4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A2F102529667A3200FC3F4E /* Theme.swift */,
+				2A2F102729667A8300FC3F4E /* DailyScrum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2F102829667A8300FC3F4E /* DailyScrum.swift in Sources */,
 				2A06BB002961328E00627D12 /* ContentView.swift in Sources */,
-				2A2F1023296672FA00FC3F4E /* WelcomeView.swift in Sources */,
+				2A2F102629667A3200FC3F4E /* Theme.swift in Sources */,
+				2A2F102E2966847200FC3F4E /* ScrumsView.swift in Sources */,
+				2A2F1023296672FA00FC3F4E /* MeetingView.swift in Sources */,
+				2A2F102A29667B2A00FC3F4E /* CardView.swift in Sources */,
 				2A06BAFE2961328E00627D12 /* EaselApp.swift in Sources */,
+				2A2F102C2966839400FC3F4E /* TrailingIconLabelStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
