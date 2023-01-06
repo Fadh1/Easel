@@ -10,10 +10,17 @@ import SwiftUI
 @main
 struct EaselApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup{
             NavigationView{
-                ScrumsView(scrums: DailyScrum.sampleData)
+                LessonsView(lessons: Lesson.sampleData)
             }
         }
+        
     }
 }
+
+/*
+ Display a Dummy List of Lessons
+
+ 
+ */

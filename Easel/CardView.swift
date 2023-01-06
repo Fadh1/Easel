@@ -2,37 +2,27 @@
 //  CardView.swift
 //  Easel
 //
-//  Created by Fadhli Rahim on 5/1/23.
+//  Created by Fadhli Rahim on 6/1/23.
 //
 
 import SwiftUI
 
 struct CardView: View {
-    let scrum: DailyScrum
-    
+    let lesson : Lesson
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(scrum.title)
-                .font(.headline)
+        VStack(alignment: .leading){
+            Text(lesson.title).font(.headline)
             Spacer()
-            HStack {
-                Label("\(scrum.attendees.count)", systemImage: "person.3")
-                Spacer()
-                Label("\(scrum.lengthInMinutes)", systemImage: "clock")
-                    .labelStyle(.trailingIcon)
-            }
-            .font(.caption)
-        }
-        .padding()
-        .foregroundColor(scrum.theme.accentColor)
+            HStack{
+                Label("\(lesson.LengthInMinutes)", systemImage: "clock")
+            }.font(.caption)
+        }.padding().foregroundColor(lesson.theme.accentColor)
     }
 }
 
 struct CardView_Previews: PreviewProvider {
-    static var scrum = DailyScrum.sampleData[0]
+    static var lesson = Lesson.sampleData[0]
     static var previews: some View {
-        CardView(scrum: scrum)
-            .background(scrum.theme.mainColor)
-            .previewLayout(.fixed(width: 400, height: 60))
+        CardView(lesson : lesson).background(lesson.theme.mainColor).previewLayout(.fixed(width:400, height: 60))
     }
 }
