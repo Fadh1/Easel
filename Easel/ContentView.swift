@@ -22,6 +22,7 @@ struct ContentView_Previews: PreviewProvider {
 
 // PencilKit for pencil input
 struct PencilKitView: UIViewRepresentable {
+    // Giving PKCanvasView a new name for existing data type
     typealias UIViewType = PKCanvasView
     
     let toolPicker = PKToolPicker()
